@@ -1,1 +1,7 @@
-
+<h1><%= @circus.name %></h1>
+<ul>
+  <% @circus.entertainers.each do |entertainer| %>
+  <li><strong>Name:</strong> <%= entertainer.name %> <strong>Specialty:</strong> <%= entertainer.specialty %></li>
+  <% end %>
+</ul>
+<div><%= link_to "Back to Circus List", root_path %> </div>
